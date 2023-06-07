@@ -94,9 +94,14 @@ img {
     height: 100%;
 }
 header{
+    /* display: flex;
+    justify-content: space-between; */
+
+
+}
+.wrapper{
     display: flex;
     justify-content: space-between;
-    
 
 }
 
