@@ -104,4 +104,383 @@ header{
     justify-content: space-between;
 
 }
+#home section.spotlight {
+}
+#home section.spotlight h3 {
+    font-size: 30px;
+    margin-bottom: 1%;
+    color: #000;
+    display: inline-block;
+}
+#home section.spotlight div.all-posts {
+    display: flex;
+    justify-content: space-between;
+}
+#home section.spotlight div.all-posts div.post-section {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#home section.spotlight div.all-posts ul.posts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+#home section.spotlight div.all-posts ul.posts li {
+    width: 31%;
+    margin-bottom: 3%;
+}
+#home section.spotlight div.all-posts ul.posts li:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+#home section.spotlight div.all-posts ul.posts li div.blog-image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+#home section.spotlight div.all-posts ul.posts li div.details div.date {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+#home section.spotlight div.all-posts ul.posts li div.details div.date h4.name {
+    font-size: 18px;
+    margin-right: 25px;
+    color: #5aaa7b;
+    font-weight: 700;
+}
+#home
+    section.spotlight
+    div.all-posts
+    ul.posts
+    li
+    div.details
+    div.date
+    div.round {
+    background: #5bab7b;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#home section.spotlight div.all-posts ul.posts li div.details div.date span {
+    color: #5bab7b;
+    font-weight: 700;
+    font-size: 16px;
+}
+#home section.spotlight div.all-posts ul.posts li div.details h3.head {
+    margin-bottom: 2%;
+    font-size: 22px;
+    font-weight: 700;
+    color: #4f5757;
+}
+#home section.spotlight div.all-posts ul.posts li div.details h3.head a {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+#home section.spotlight div.all-posts ul.posts li div.details p.description {
+    color: #5e5e5e;
+    font-size: 18px;
+    margin-bottom: 7%;
+}
+#home section.spotlight div.all-posts ul.posts li div.bottom {
+    display: flex;
+    margin-bottom: -10px;
+    flex-wrap: wrap;
+}
+#home section.spotlight div.all-posts ul.posts li div.bottom a.design {
+    display: block;
+    border-radius: 25px;
+    padding: 8px 20px;
+    color: #5bab7b;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border:2px solid #5bab7b;
+}
+#home section.spotlight div.all-posts ul.posts li div.bottom a.design.one {
+    color: #5bab7b;
+    border:2px solid #5bab7b;
+}
+#home section.spotlight div.all-posts ul.posts li div.bottom a.design.two {
+    border:2px solid #E91E63;
+    color: #E91E63;
+}
+#home section.spotlight div.all-posts ul.posts li div.bottom a.design.three {
+    border:2px solid #1E88E5;
+    color: #1E88E5;
+}
+#home
+    section.spotlight
+    div.all-posts
+    ul.posts
+    li
+    div.details
+    div.bottom
+    a.design:last-child {
+    margin-right: 0px;
+}
+#home section.spotlight div.all-posts div.filter-section {
+    width: 20%;
+    padding: 0 0 0 3%;
+}
+#home div#overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    right: -100%;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.3s ease-in-out 0s;
+    top: 0;
+}
+#home div#overlay.active {
+    right: 0;
+}
+#home div#close {
+    position: fixed;
+    background: #fff;
+    right: -100%;
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+    z-index: 2;
+    transition: all 0.3s ease-in-out 0s;
+    top: 25px;
+    border-radius: 50%;
+}
+#home section.spotlight div.all-posts div.filter-section form {
+    width: 100%;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    input[type="text"] {
+    border: 2px solid #5e5e5e;
+    width: 100%;
+    padding: 0 10px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8%;
+    border-radius: 8px;
+}
+#home section.spotlight div.all-posts div.filter-section form div.filter {
+    padding: 0 0 0 10%;
+    margin-bottom: 5%;
+}
+#home section.spotlight div.all-posts div.filter-section form p.filter-head {
+    font-size: 18px;
+    color: #5e5e5e;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    div.filter
+    input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    div.filter
+    label.radio {
+    color: #4f5757;
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding-left: 35px;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    div.filter
+    label
+    span {
+    color: #4f5757;
+    font-weight: 700;
+    font-size: 16px;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    div.filter
+    label.radio
+    input {
+    position: absolute;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    left: -2000px;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    div.filter
+    label.radio
+    input:checked
+    ~ .radio {
+    background-color: #fff;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    div.filter
+    label.radio
+    input:checked
+    ~ .radio::after {
+    opacity: 1;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    div.filter
+    label.radio
+    input:checked
+    ~ .label {
+    opacity: 1;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    div.filter
+    label.radio
+    .radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #0ac07d;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border-radius: 50%;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    div.filter
+    label.radio
+    .radio::after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #0ac07d;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    div.filter
+    label.checkbox {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    div.filter
+    label.checkbox
+    input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0ac07d;
+    border-radius: 5px;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    div.filter
+    input[type="checkbox"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    background-color: #0ac07d;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    div.filter
+    input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    div.filter
+    input[type="checkbox"] {
+    margin-right: 18px;
+    cursor: pointer;
+}
+#home
+    section.spotlight
+    div.all-posts
+    div.filter-section
+    form
+    input[type="submit"] {
+    background-color: #5aab7b;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    }
+    
+
 
