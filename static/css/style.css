@@ -169,7 +169,7 @@ section.spotlight div.all-posts {
   /* color: #5aaa7b; */
   font-weight: 700;
 }
-  /* .spotlight
+  .spotlight
   div.all-posts
   ul.posts
   li
@@ -181,7 +181,7 @@ section.spotlight div.all-posts {
   height: 10px;
   border-radius: 50%;
   margin-right: 10px;
-} */
+}
 .spotlight div.all-posts ul.posts li div.details div.data span {
   /* color: #5bab7b; */
   font-weight: 500;
