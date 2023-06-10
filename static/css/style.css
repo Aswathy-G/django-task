@@ -90,7 +90,7 @@ br.clear {
 }
 img {
   display: block;
-  width: 100%;
+  width: 88%;
   height: 100%;
 }
 header {
@@ -104,19 +104,20 @@ header section.wrapper {
   
 }
 header section.wrapper div.left  h1 {
-  font-size: 35px;
+  font-size: 27px;
   font-weight: 900;
   margin-top: -15px;
 }
 header section.wrapper h1.right {
   /* width: 50%; */
   margin-left: 70%;
+  margin-top: -6px;
   
 } 
 header section.wrapper h1.right a{
   background-color:green;
     padding: 10px;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 900;
     color: #fff;
     text-align: center;
@@ -130,7 +131,8 @@ section.spotlight div.all-posts {
   display: flex;
   justify-content: space-between;
 }
-.spotlight div.all-posts div.post-section {
+.spotlight div.all-posts
+ div.post-section {
   width: 85%;
   display: flex;
   justify-content: space-between;
@@ -144,11 +146,11 @@ section.spotlight div.all-posts {
   flex-wrap: wrap;
   /* margin-bottom: 10%; */
   /* margin-left: 9%; */
-  margin-top: 6%;
+  margin-top: 1%;
 }
 .spotlight div.all-posts ul.posts li {
   width: 31%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 .spotlight div.all-posts ul.posts li:nth-last-child(-n + 3) {
   margin-bottom: 0;
@@ -166,16 +168,10 @@ section.spotlight div.all-posts {
 .spotlight div.all-posts ul.posts li div.details div.data h4.name {
   font-size: 18px;
   margin-right: 25px;
-  /* color: #5aaa7b; */
+  color: #5aaa7b;
   font-weight: 700;
 }
-  .spotlight
-  div.all-posts
-  ul.posts
-  li
-  div.details
-  div.data
-  div.round {
+.spotlight div.all-posts ul.posts li div.details div.data div.round {
   background: #5bab7b;
   width: 10px;
   height: 10px;
@@ -183,7 +179,7 @@ section.spotlight div.all-posts {
   margin-right: 10px;
 }
 .spotlight div.all-posts ul.posts li div.details div.data span {
-  /* color: #5bab7b; */
+  color: #5bab7b;
   font-weight: 500;
   font-size: 16px;
 }
@@ -199,9 +195,10 @@ section.spotlight div.all-posts {
   color: #000;
 } */
 .spotlight div.all-posts ul.posts li div.details p.description {
-  color: #5e5e5e;
+  color: orchid;
   font-size: 18px;
   margin-bottom: 7%;
+  font-weight: bold;
 }
 
 .spotlight div.all-posts div.filter-section form {
@@ -226,9 +223,9 @@ section.spotlight div.all-posts {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 42%;
+  width: 40%;
   margin-left: 20%;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 }
 .spotlight div.all-posts div.filter-section form p.filter-head {
   font-size: 18px;
@@ -237,15 +234,10 @@ section.spotlight div.all-posts {
   margin-bottom: 5%;
   margin-left: 10%;
 }
-/* .spotlight
-  div.all-posts
-  div.filter-section
-  form
-  div.filter
-  input[type="radio"] {
+.spotlight div.all-posts div.filter-section form div.filter input[type="radio"] {
   margin-right: 5px;
   cursor: pointer;
-}
+} 
 .spotlight
   div.all-posts
   div.filter-section
@@ -270,7 +262,7 @@ section.spotlight div.all-posts {
   span {
   color: #4f5757;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
 }
 .spotlight
   div.all-posts
@@ -384,11 +376,11 @@ section.spotlight div.all-posts {
   content: "";
   width: 10px;
   height: 10px;
-  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-  transform: scale(0);
+  /* clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%); */
+  /* transform: scale(0);
   transform-origin: bottom left;
   transition: 120ms transform ease-in-out;
-  background-color: #0ac07d;
+  background-color: #0ac07d; */
 }
 .spotlight
   div.all-posts
@@ -422,4 +414,73 @@ section.spotlight div.all-posts {
   border-radius: 8px;
   cursor: pointer;
 }
- */
+div.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-top: 2px solid #f5f5f5;
+  padding-top: 20px; */
+}
+div.pagination a.prev {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #5e5e5e;
+  font-weight: 700;
+}
+div.pagination a.prev span, div.pagination .disabled.prev span {
+  transform: rotate(90deg);
+  margin-right: 10px;
+  width: 15px;
+}
+div.pagination a.next, div.pagination .disabled {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #5e5e5e;
+}
+div.pagination a.next span, div.pagination .disabled.next span {
+  transform: rotate(-90deg);
+  margin-left: 10px;
+  width: 15px;
+}
+div.pagination .disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+div.pagination div.pages {
+  display: flex;
+  align-items: center;
+}
+div.pagination div.pages span.active {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  width:30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5aab7b;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+div.pagination div.pages a {
+  color: #5e5e5e;
+  font-size: 18px;
+  font-weight: 700;
+  width:30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+
+}
+div.pagination div.pages a:hover {
+  background: #c9eee4;
+}
+
+ 

@@ -39,9 +39,8 @@
                 <div class="post-section">
                    
                     <ul class="posts">
-                    {% for product in products %}
+                    {% for product in instances %}
                         <li>
-                            <a href="./post.html">
                                 <div class="product-image">
                                     <img
                                         src="{{product.image.url}}"
@@ -59,7 +58,7 @@
                                      {{product.description}}
                                     </p>
                                 </div>
-                            </a> 
+                           
                         </li>
                         {% endfor %}             
                        
@@ -74,31 +73,40 @@
                             
                             <label class="checkbox">
                                 <input type="checkbox" name="category" />
+                                <span class="label">lipstic</span>
+                            </label>
+                            
+                            <label class="checkbox">
+                                <input type="checkbox" name="category" />
                                 <span class="label">foundation</span>
                             </label>
                             
                             <label class="checkbox">
                                 <input type="checkbox" name="category" />
-                                <span class="label">eyeshadow palette</span>
-                            </label>
+                                <span class="label">compact</span>
+                            </label> 
+                            
+                            <!-- <label class="checkbox">
+                                <input type="checkbox"name="category" />
+                                <span class="label">lipstic</span>
+                            </label> -->
+                            
+                            <!-- <label class="checkbox">
+                                <input type="checkbox"name="category" />
+                                <span class="label">contour</span>
+                            </label> -->
                             
                             <label class="checkbox">
-                                <input type="checkbox" name="category" />
-                                <span class="label">coding</span>
+                                <input type="checkbox"name="category" />
+                                <span class="label">mascara</span>
                             </label>
                             
                             <label class="checkbox">
                                 <input type="checkbox"name="category" />
-                                <span class="label">government</span>
+                                <span class="label">palette</span>
                             </label>
-                            
-                            <label class="checkbox">
-                                <input type="checkbox"name="category" />
-                                <span class="label">data-science</span>
-                            </label>
-                            
                         </div>
-                        <p class="filter-head">Brands</p>
+                        <!-- <p class="filter-head">Brands</p>
                         <div class="filter">
                             
                             <label class="checkbox">
@@ -126,11 +134,11 @@
                                 <span class="label">data-science</span>
                             </label>
                             
-                        </div>
+                        </div> -->
                         <p class="filter-head">Price</p>
                         <div class="filter">
                             
-                            <label class="checkbox">
+                            <!-- <label class="checkbox">
                                 <input type="checkbox" name="category" />
                                 <span class="label">technology</span>
                             </label>
@@ -138,7 +146,7 @@
                             <label class="checkbox">
                                 <input type="checkbox" name="category" />
                                 <span class="label">programming</span>
-                            </label>
+                            </label> -->
                             
                             <label class="checkbox">
                                 <input type="checkbox" name="category" />
@@ -161,11 +169,49 @@
                     </form>
                 </div>
             </div>
+            {% if instances.has_other_pages %}
+            
+            <div class="pagination">
+                {% if instances.has_previous %}
+                <a href="?page={{instances.previous_page_number}}" class="prev">
+                    Previous
+                </a>
+            
+                {% else %}
+                <a div class="prev disabled">
+                    Previous
+                </a>
+                {% endif %}
+                <div class="pages">
+                    {% for i in instances.paginator.page_range %}
+                      {% if instances.numer == i %}
+                      <span class="active"> {{i}} </span>
+                      {% else %}
+                       <a href="?page={{i}}"> {{i}} </a>
+                       {% endif %}
+                    {% endfor %}
+                   
+                </div>
+                {% if instances.has_next %}
+                <a href="?page={{instances.next_page_number}}" class="next">
+                    Next
+                    <!-- <span class="arrow">
+                        <img
+                            src="./images/icons/arrow.svg"
+                            alt="Arrow"
+                        />
+                    </span> -->
+                </a>
+                {% else %}
+                <a div class="next disabled">
+                    Next
+                </a>
+                {% endif %}
+
+            </div>
+            {% endif %}
+
         </section>
-        <!-- <div id="overlay"></div>
-        <div id="close">
-            <img src="./images/icons/close.svg" alt="" />
-        </div> -->
     </section>
 </section>
 
