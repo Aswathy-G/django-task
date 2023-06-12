@@ -1,6 +1,9 @@
-from django.shortcuts import render
-from django.http.response import HttpResponse
+from django.shortcuts import render,redirect
+from django.urls import reverse
+from django.http import HttpResponseRedirect
 from django.core.paginator import Paginator, PageNotAnInteger,EmptyPage
+from django.contrib.auth.decorators import login_required
+from web.forms import ProductForm
 
 from web.models import Product,Category
 
@@ -26,8 +29,25 @@ def index(request):
         "instances" : instances,
          "categorys":categorys
         }
-    return render(request,'index.html',context=context)
+    return render(request,'web/index.html',context=context)
 
-    
+
+def create_product(request):
+    # print("first")
+    if request.method == 'POST':
+        # print("second")
+        form = ProductForm(request.POST,request.FILES)
+        
+
+        if form.is_valid():
+            # print("hai")
+            form.save()
+            # return redirect('web/index.html')  # Redirect to the product list page
+            return HttpResponseRedirect(reverse('web:index'))
+    else:
+        form = ProductForm()
+
+        return render(request, 'web/create.html', {'form': form})
+
    
 

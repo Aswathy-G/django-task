@@ -3,7 +3,7 @@ from web.models import Product,Category
 
 
 class PurchaseAdmin(admin.ModelAdmin):
-    list_display = ("id","image","name","price","description")
+    list_display = ("id","image","price","description")
 
 admin.site.register(Product, PurchaseAdmin)
 

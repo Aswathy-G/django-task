@@ -504,7 +504,12 @@ div.pagination div.pages a:hover {
   display: flex;
   justify-content: space-between;
 }
- .spotlight form div.title {
+.spotlight form div.form-field label.subhead{
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 5%;
+}
+ /* .spotlight form div.title {
   position: relative;
   width: 100%;
   border: 2px solid #949494;
@@ -517,11 +522,11 @@ div.pagination div.pages a:hover {
   font-size: 20px;
   font-weight: 700;
   color: #3f3f3f;
-}
-#edit-post-home .spotlight 
+} */
+ /* .spotlight 
 form div.title input {
-  /* position: absolute;
-  top: -15%; */
+  position: absolute;
+  top: -15%;
   padding: 2px 15px;
   background: #fff;
   font-size: 16px;
@@ -529,19 +534,25 @@ form div.title input {
   left: 3%;
   border-radius: 15px;
   text-align: center;
-}
-.spotlight form label.subheads {
+} */
+/* .spotlight form label.subheads {
   font-size: 18px;
   font-weight: 700;
   color: #6c6c6c;
-}
-.spotlight
+  font-weight: 400;
+  border: 1px solid;
+  width: 37%;
+  margin-right: 20%;
+  padding: 20px;
+} */
+/* .spotlight
  form div.description {
   width: 100%;
+  margin-bottom: 3%; */
   /* border: 2px solid #949494;
   border-radius: 6px; */
-  margin-bottom: 3%;
-}
+  
+
 /* #edit-post-home section.spotlight
  form div.description.django-ckeditor-widget{
   display:block ! important;
@@ -587,13 +598,29 @@ form div.title input {
   img {
   filter: invert(1);
 } */
-/* .spotlight 
-form div.description textarea {
-  width: 100%;
+.spotlight 
+form div.form-field input{
   font-size: 20px;
   color: #3f3f3f;
   font-weight: 700;
-} */
+  font-weight: 400;
+  border: 1px solid;
+  width: 46%;
+  margin-right: 20%;
+  padding: 20px;
+
+}
+.spotlight 
+form div.form-field textarea {
+
+  font-size: 20px;
+  color: #3f3f3f;
+  font-weight: 700;
+  font-weight: 400;
+  border: 1px solid;
+  width: 46%;
+  margin-right: 20%;
+}
 .spotlight 
 form div.description p.bottom {
   border-top: 2px solid #949494;
