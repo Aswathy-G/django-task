@@ -405,7 +405,7 @@ section.spotlight div.all-posts {
   form
   input[type="submit"] {
   background-color: #5aab7b;
-  width: 100%;
+  width: 50%;
   padding: 10px;
   font-size: 20px;
   font-weight: 900;
@@ -413,6 +413,7 @@ section.spotlight div.all-posts {
   text-align: center;
   border-radius: 8px;
   cursor: pointer;
+  margin-left: 21%;
 }
 div.pagination {
   width: 100%;
@@ -489,6 +490,7 @@ div.pagination div.pages a:hover {
 #edit-post-home .wrapper {
 }
 .spotlight {
+  margin-top: 2%;
 }
 #edit-post-home .spotlight h3 {
   font-size: 30px;
@@ -599,7 +601,7 @@ form div.title input {
   filter: invert(1);
 } */
 .spotlight 
-form div.form-field input{
+form div.form-field input[type="text"]{
   font-size: 20px;
   color: #3f3f3f;
   font-weight: 700;
@@ -621,6 +623,17 @@ form div.form-field textarea {
   width: 46%;
   margin-right: 20%;
 }
+/* .spotlight 
+form div.form-field .submit{
+  font-size: 20px;
+  color: #3f3f3f;
+  font-weight: 700;
+  font-weight: 400;
+  border: 1px solid;
+  width: 46%;
+  margin-right: 20%;
+
+} */
 .spotlight 
 form div.description p.bottom {
   border-top: 2px solid #949494;
@@ -628,7 +641,7 @@ form div.description p.bottom {
   color: #3f3f3f;
   font-weight: 700;
 }
-.spotlight
+/* .spotlight
  form .input {
   border: 2px solid #949494;
   padding: 15px;
@@ -638,7 +651,8 @@ form div.description p.bottom {
   color: #3f3f3f;
   border-radius: 10px;
   margin-right: 17%;
-}
+ } */
+
 /* .spotlight
  form label.checkbox {
   display: flex;
@@ -696,6 +710,13 @@ form input[type="submit"] {
   text-align: center;
   border-radius: 8px;
   cursor: pointer;
+  margin-left: 80%;
+}
+.spotlight 
+form input[type="file"]{
+      width: 30%;
+    padding: 4%;
+    margin-right: 36%;
 }
 /* #edit-post-home section.spotlight 
 form label {
