@@ -102,9 +102,8 @@ header section.wrapper {
   display: flex;
   justify-content: space-between;
   margin-top: 9px;
-  
 }
-header section.wrapper div.left  h1 {
+header section.wrapper div.left h1 {
   font-size: 27px;
   font-weight: 900;
   margin-top: -15px;
@@ -113,16 +112,15 @@ header section.wrapper h1.right {
   /* width: 50%; */
   margin-left: 70%;
   margin-top: -6px;
-  
-} 
-header section.wrapper h1.right a{
-  background-color:green;
-    padding: 10px;
-    font-size: 17px;
-    font-weight: 900;
-    color: #fff;
-    text-align: center;
-    border-radius: 8px;
+}
+header section.wrapper h1.right a {
+  background-color: green;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
 }
 
 section.spotlight {
@@ -132,8 +130,7 @@ section.spotlight div.all-posts {
   display: flex;
   justify-content: space-between;
 }
-.spotlight div.all-posts
- div.post-section {
+.spotlight div.all-posts div.post-section {
   width: 85%;
   display: flex;
   justify-content: space-between;
@@ -203,11 +200,7 @@ section.spotlight div.all-posts {
 .spotlight div.all-posts div.filter-section form {
   width: 100%;
 }
-.spotlight
-  div.all-posts
-  div.filter-section
-  form
-  input[type="text"] {
+.spotlight div.all-posts div.filter-section form input[type="text"] {
   border: 2px solid #5e5e5e;
   width: 100%;
   padding: 0 10px;
@@ -219,11 +212,13 @@ section.spotlight div.all-posts {
   border-radius: 8px;
 }
 .spotlight div.all-posts div.filter-section form div.filter {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 40%;
+  width: 40%; */
   margin-left: 20%;
+  padding: 0 0 0 10%;
+  margin-bottom: 5%;
   /* margin-top: 5%; */
 }
 .spotlight div.all-posts div.filter-section form p.filter-head {
@@ -233,7 +228,11 @@ section.spotlight div.all-posts {
   margin-bottom: 5%;
   margin-left: 10%;
 }
-.spotlight div.all-posts div.filter-section form div.filter input[type="radio"] {
+/* .spotlight 
+div.all-posts 
+div.filter-section
+ form div.filter
+  input[type="radio"] {
   margin-right: 5px;
   cursor: pointer;
 } 
@@ -338,13 +337,8 @@ section.spotlight div.all-posts {
   height: 10px;
   border-radius: 50%;
   background: #0ac07d;
-}
-.spotlight
-  div.all-posts
-  div.filter-section
-  form
-  div.filter
-  label.checkbox {
+} */
+.spotlight div.all-posts div.filter-section form div.filter label.checkbox {
   display: flex;
   cursor: pointer;
   margin-bottom: 20px;
@@ -356,11 +350,11 @@ section.spotlight div.all-posts {
   div.filter
   label.checkbox
   input[type="checkbox"] {
-  appearance: none;
-  background-color: #fff;
+  /* appearance: none;
+  background-color: #fff; */
   width: 20px;
   height: 20px;
-  border: 2px solid #0ac07d;
+  /* border: 2px solid #0ac07d; */
   border-radius: 5px;
   transform: translateY(-0.075em);
   display: grid;
@@ -375,13 +369,13 @@ section.spotlight div.all-posts {
   content: "";
   width: 10px;
   height: 10px;
-  /* clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%); */
-  /* transform: scale(0);
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
   transform-origin: bottom left;
   transition: 120ms transform ease-in-out;
   background-color: #0ac07d;
-} */
-  }
+}
+
 .spotlight
   div.all-posts
   div.filter-section
@@ -399,17 +393,13 @@ section.spotlight div.all-posts {
   margin-right: 18px;
   cursor: pointer;
 }
-.spotlight
-  div.all-posts
-  div.filter-section
-  form
-  input[type="submit"] {
+.spotlight div.all-posts div.filter-section form input[type="submit"] {
   background-color: #5aab7b;
   width: 50%;
   padding: 10px;
   font-size: 20px;
   font-weight: 900;
-  color: #985a5a;
+  /* color: #985a5a; */
   text-align: center;
   border-radius: 8px;
   cursor: pointer;
@@ -420,8 +410,8 @@ div.pagination {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border-top: 2px solid #f5f5f5;
-  padding-top: 20px; */
+  border-top: 2px solid #f5f5f5;
+  padding-top: 20px;
 }
 div.pagination a.prev {
   display: flex;
@@ -430,19 +420,22 @@ div.pagination a.prev {
   color: #5e5e5e;
   font-weight: 700;
 }
-div.pagination a.prev span, div.pagination .disabled.prev span {
+div.pagination a.prev span,
+div.pagination .disabled.prev span {
   transform: rotate(90deg);
   margin-right: 10px;
   width: 15px;
 }
-div.pagination a.next, div.pagination .disabled {
+div.pagination a.next,
+div.pagination .disabled {
   display: flex;
   align-items: center;
   font-size: 18px;
   font-weight: 700;
   color: #5e5e5e;
 }
-div.pagination a.next span, div.pagination .disabled.next span {
+div.pagination a.next span,
+div.pagination .disabled.next span {
   transform: rotate(-90deg);
   margin-left: 10px;
   width: 15px;
@@ -459,7 +452,7 @@ div.pagination div.pages span.active {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
-  width:30px;
+  width: 30px;
   height: 30px;
   display: flex;
   align-items: center;
@@ -472,13 +465,12 @@ div.pagination div.pages a {
   color: #5e5e5e;
   font-size: 18px;
   font-weight: 700;
-  width:30px;
+  width: 30px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-
 }
 div.pagination div.pages a:hover {
   background: #c9eee4;
@@ -506,12 +498,12 @@ div.pagination div.pages a:hover {
   display: flex;
   justify-content: space-between;
 }
-.spotlight form div.form-field label.subhead{
+.spotlight form div.form-field label.subhead {
   font-size: 20px;
   font-weight: 900;
   margin-left: 5%;
 }
- /* .spotlight form div.title {
+/* .spotlight form div.title {
   position: relative;
   width: 100%;
   border: 2px solid #949494;
@@ -525,7 +517,7 @@ div.pagination div.pages a:hover {
   font-weight: 700;
   color: #3f3f3f;
 } */
- /* .spotlight 
+/* .spotlight 
 form div.title input {
   position: absolute;
   top: -15%;
@@ -551,9 +543,8 @@ form div.title input {
  form div.description {
   width: 100%;
   margin-bottom: 3%; */
-  /* border: 2px solid #949494;
+/* border: 2px solid #949494;
   border-radius: 6px; */
-  
 
 /* #edit-post-home section.spotlight
  form div.description.django-ckeditor-widget{
@@ -600,8 +591,7 @@ form div.title input {
   img {
   filter: invert(1);
 } */
-.spotlight 
-form div.form-field input[type="text"]{
+.spotlight form div.form-field input[type="text"] {
   font-size: 20px;
   color: #3f3f3f;
   font-weight: 700;
@@ -610,11 +600,8 @@ form div.form-field input[type="text"]{
   width: 46%;
   margin-right: 20%;
   padding: 20px;
-
 }
-.spotlight 
-form div.form-field textarea {
-
+.spotlight form div.form-field textarea {
   font-size: 20px;
   color: #3f3f3f;
   font-weight: 700;
@@ -634,8 +621,7 @@ form div.form-field .submit{
   margin-right: 20%;
 
 } */
-.spotlight 
-form div.description p.bottom {
+.spotlight form div.description p.bottom {
   border-top: 2px solid #949494;
   padding: 20px 30px;
   color: #3f3f3f;
@@ -699,8 +685,7 @@ form div.description p.bottom {
   cursor: pointer;
 } */
 /* lkdhfjdhfjhdfjdfh */
-.spotlight 
-form input[type="submit"] {
+.spotlight form input[type="submit"] {
   background-color: #5aab7b;
   width: 10%;
   padding: 10px;
@@ -712,11 +697,10 @@ form input[type="submit"] {
   cursor: pointer;
   margin-left: 80%;
 }
-.spotlight 
-form input[type="file"]{
-      width: 30%;
-    padding: 4%;
-    margin-right: 36%;
+.spotlight form input[type="file"] {
+  width: 30%;
+  padding: 4%;
+  margin-right: 36%;
 }
 /* #edit-post-home section.spotlight 
 form label {
@@ -730,5 +714,3 @@ form label {
 .ck.ck-label.ck-voice-label{
   display: none !important;
 } */
-
- 

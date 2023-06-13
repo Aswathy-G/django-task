@@ -12,6 +12,18 @@ from web.models import Product,Category
 
 def index(request):
     products = Product.objects.filter(is_deleted=False,is_edit=False)
+    categorys = Category.objects.all()
+    
+
+# def product_list(request):
+#     search_categorys = request.GET.getlist("category")
+#     products = Product.objects.all()
+#     # print(search_categorys)
+#     if search_categorys:
+#         products = products.filter(category__in=search_categorys)
+    
+#         return render(request, 'web/index.html')    
+
 
     instances = Paginator(products,6)
     page = request.GET.get('page',1)
@@ -21,9 +33,6 @@ def index(request):
         instances = instances.page(1)
     except EmptyPage:
         instances = instances.page(instances.num_pages)
-
-    categorys = Category.objects.all()
-
     context={
         "title":"HomePage",
         "instances" : instances,
@@ -47,7 +56,29 @@ def create_product(request):
     else:
         form = ProductForm()
 
-        return render(request, 'web/create.html', {'form': form})
+    return render(request, 'web/create.html', {'form': form})
+    
+
+
+# def product_list(request):
+#     category_id = request.GET.get('category')
+#     products = Product.objects.all()
+
+#     if category_id:
+#         products = products.filter(category_id=category_id)
+
+#     categories = Category.objects.all()
+
+#     context = {
+#         'products': products,
+#         'categories': categories,
+#     }
+
+#     return render(request, 'web/index.html', context)
+
+
+    
+
 
    
 
